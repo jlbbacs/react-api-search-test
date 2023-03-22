@@ -8,6 +8,7 @@ function App() {
     {name:'id',selector : row => row.id ,sortable: true},
     {name:'title',selector : row => row.title, sortable: true},
     {name:'price',selector: row => row.price},
+    {name:'category',selector: row => row.category},
     {name:'image',selector: row =><img src = {row.image}/> }
     
   ]
