@@ -6,14 +6,14 @@ import './App.css'
 function App() {
   const column = [
     {name:'id',selector : row => row.id ,sortable: true},
-    {name:'name',selector : row => row.name, sortable: true},
-    {name:'email',selector: row => row.email},
-    {name:'city',selector: row => row.address.city}
+    {name:'title',selector : row => row.title, sortable: true},
+    {name:'price',selector: row => row.price},
+    {name:'image',selector: row =><img src = {row.image}/> }
     
   ]
   useEffect(()=> {
       const fetchData = async () => {
-       axios.get('https://jsonplaceholder.typicode.com/users')
+       axios.get('https://fakestoreapi.com/products')
         .then(res => {
           setRecord(res.data)
           setfilterRecord(res.data)
@@ -26,7 +26,7 @@ function App() {
   const [record,setRecord] = useState([])
   const [filterRecord,setfilterRecord] = useState([])
   const handleFilter = (event) => {
-    const newData = filterRecord.filter(row => row.name.toLowerCase().includes(event.target.value.toLowerCase()))
+    const newData = filterRecord.filter(row => row.title.toLowerCase().includes(event.target.value.toLowerCase()))
     setRecord(newData);
   }
   return (
