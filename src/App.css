@@ -6,7 +6,8 @@
   font-weight: bolder;
 }
 .sc-dmqHEX  {
-  background-color: blue!important;
+  background-color: rgb(135, 135, 143)!important;
+  border-radius: 0.2rem;
 }
 .text-box{
   margin-bottom:2rem;
