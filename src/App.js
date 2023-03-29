@@ -31,16 +31,18 @@ function App() {
     setRecord(newData);
   }
   return (
-    <div style={{padding: '50px 10%', backgroundColor: 'white'}}>
+    <div className='container'>
+    <div className='parent' style={{padding: '50px 10%', backgroundColor: 'white'}}>
         <div className=" text-box" style= {{display:'flex' ,justifyContent:'right'}}>
         <input type = 'text' placeholder='...search' onChange = {handleFilter}/>
         </div>
-      <Datatable columns={column}
+      <Datatable className='data-table' columns={column}
       data={record}>
       
       </Datatable>
       
       
+    </div>
     </div>
   )
 }

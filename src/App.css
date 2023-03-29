@@ -7,7 +7,7 @@
   color: rgb(250, 252, 253);
 }
 .sc-dmqHEX  {
-  background-color: rgb(135, 135, 143)!important;
+  background-color: rgb(61, 61, 237)!important;
   border-radius: 0.2rem;
 }
 .text-box{
@@ -17,4 +17,20 @@ img{
   width: 50px;
   height: 50px;
   margin-top: 1rem;
+}
+.parent{
+overflow-x: auto;
+  
+}
+
+
+@media(max-width: 768px) {
+ .parent{
+display: table !important;
+width: auto;
+
+
+
+}
+
 }
