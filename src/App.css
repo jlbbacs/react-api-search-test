@@ -18,10 +18,7 @@ img{
   height: 50px;
   margin-top: 1rem;
 }
-.parent{
-overflow-x: auto;
-  
-}
+
 
 
 @media(max-width: 768px) {
